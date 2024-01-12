@@ -43,8 +43,8 @@ build:
 
 ## run: run the  application
 .PHONY: run
-run: build
-	/tmp/bin/${BINARY_NAME}
+run:
+	go run .
 
 # ==================================================================================== #
 # TESTING
