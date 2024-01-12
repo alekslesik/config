@@ -60,3 +60,12 @@ test:
 test-cover:
 	go test -v -race -coverprofile=./coverage.out ./...
 	go tool cover -html=./coverage.out -o ./coverage.html
+
+# ==================================================================================== #
+# GIT
+# ==================================================================================== #
+
+## push-tag: push all tags
+.PHONY: push-tag
+test:
+	git push origin --tags
